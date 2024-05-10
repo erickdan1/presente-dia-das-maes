@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+    <link rel="stylesheet" href="style-msgtpy.css">
+</head>
+<body>
+    <div class="song">
+        <div class="title">Música  </div>
+        <div class="pause" onclick="togglePlay()">&#128266;</div>
+        <div class="player">
+            <audio src="music-coracaodemae_.mp3" class="audio" type="audio/mpeg" autoplay loop></audio>
+        </div>
+    </div>
+    <div class="textCont"></div>
+    <script src="script-msgtpy.js"></script>
+    <script>
+        var pause = document.querySelector(".pause");
+        var audio = document.querySelector(".audio");
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                pause.innerHTML = "&#128266;";
+            } else {
+                audio.pause();
+                pause.innerHTML = "&#128263;";
+                pause.style.color = "#848484";
+            }
+        }
+    </script>
+</body>
+</html>
