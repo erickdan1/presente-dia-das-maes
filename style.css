@@ -99,11 +99,27 @@ body {
 }
 
 .text1 {
+    text-align: center;
+}
+
+.text1 h2 {
     position: absolute;
     color: white;
     font-family: sans-serif;
     top: -110px;
     z-index: -1;
+}
+
+.text1 h3 {
+    color: white;
+    font-family: sans-serif;
+    z-index: -1;
+    font-size: medium;
+    margin-top: 30px;
+}
+
+.text1 span {
+    font-size: large;
 }
 
 .text {
